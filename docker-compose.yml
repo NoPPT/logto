@@ -10,6 +10,6 @@ services:
     environment:
       - TRUST_PROXY_HEADER=1
       - DB_URL=postgres://postgres:Pk6zBaJp2xsXA8TB@172.21.16.6:5432/user
-      - ENDPOINT=https://auth.onsanhu.top
-      - ADMIN_ENDPOINT=https://authadmin.onsanhu.top
+      - ENDPOINT=https://auth.onsanhu.com
+      - ADMIN_ENDPOINT=https://authadmin.onsanhu.com
       - TZ=Asia/Shanghai
