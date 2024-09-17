@@ -13,13 +13,13 @@ export const invalidAccessTokenErrcode = [40_001, 40_014];
 
 export const defaultMetadata: ConnectorMetadata = {
   id: 'wechat-gzh',
-  target: 'wechat',
-  platform: ConnectorPlatform.Web,
+  target: 'wechat-gzh',
+  platform: ConnectorPlatform.H5,
   name: {
-    en: 'WeChat',
-    'zh-CN': '微信',
-    'tr-TR': 'WeChat',
-    ko: 'WeChat',
+    en: 'WeChat Gzh',
+    'zh-CN': '微信公众号',
+    'tr-TR': 'WeChat Gzh',
+    ko: 'WeChat Gzh',
   },
   logo: './logo.svg',
   logoDark: null,
