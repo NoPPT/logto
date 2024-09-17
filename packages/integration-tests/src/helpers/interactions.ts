@@ -136,6 +136,7 @@ export const createNewSocialUserWithUsernameAndPassword = async (connectorId: st
 
   await client.successSend(createSocialAuthorizationUri, { state, redirectUri, connectorId });
 
+  console.log('patchInteractionIdentifiers');
   await client.successSend(patchInteractionIdentifiers, {
     connectorId,
     connectorData: { state, redirectUri, code, userId: socialUserId },

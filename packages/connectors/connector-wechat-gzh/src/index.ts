@@ -91,7 +91,8 @@ export const getAccessToken = async (
 const getUserInfo =
   (getConfig: GetConnectorConfig): GetUserInfo =>
   async (data) => {
-    const { code, state } = await authorizationCallbackHandler(data);
+    console.log('getUserInfo', data);
+    const { code } = await authorizationCallbackHandler(data);
     const config = await getConfig(defaultMetadata.id);
     validateConfig(config, wechatConfigGuard);
     const { accessToken, openid } = await getAccessToken(code, config);
