@@ -68,6 +68,7 @@ const connectors = {
     universal: '通用',
     web: '网页',
     native: '原生',
+    h5: 'H5',
   },
   add_multi_platform: '支持多平台，选择一个平台继续',
   drawer_title: '连接器配置指南',

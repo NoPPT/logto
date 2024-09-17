@@ -77,6 +77,7 @@ const connectors = {
     universal: 'Universel',
     web: 'Web',
     native: 'Natifs',
+    h5: 'H5',
   },
   add_multi_platform:
     ' prend en charge plusieurs plateformes, sélectionnez une plateforme pour continuer',

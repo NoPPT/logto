@@ -74,6 +74,7 @@ const connectors = {
     universal: 'ユニバーサル',
     web: 'Web',
     native: 'ネイティブ',
+    h5: 'H5',
   },
   add_multi_platform:
     'は複数のプラットフォームをサポートしています。続行するプラットフォームを選択してください。',

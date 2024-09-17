@@ -53,7 +53,7 @@ const getAuthorizationUri =
 
     const queryParameters = new URLSearchParams({
       appid: appId,
-      redirect_uri: encodeURIComponent(redirectUri), // The variable `redirectUri` should match {appId, appSecret}
+      redirect_uri: encodeURI(redirectUri), // The variable `redirectUri` should match {appId, appSecret}
       response_type: 'code',
       scope: scope ?? defaultScope,
       state: encodeURIComponent(state),

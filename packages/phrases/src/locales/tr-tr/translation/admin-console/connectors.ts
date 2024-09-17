@@ -76,6 +76,7 @@ const connectors = {
     universal: 'Evrensel',
     web: 'Web',
     native: 'Native',
+    h5: 'H5',
   },
   add_multi_platform: ' birden fazla platformu destekler, devam etmek için bir platform seçin',
   drawer_title: 'Bağlayıcı Kılavuzu',
