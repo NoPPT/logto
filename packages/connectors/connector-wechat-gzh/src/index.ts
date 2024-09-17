@@ -93,18 +93,22 @@ const getUserInfo =
   async (data) => {
     console.log('getUserInfo', data);
     const { code } = await authorizationCallbackHandler(data);
+    console.log('getUserInfo code', code);
     const config = await getConfig(defaultMetadata.id);
+    console.log('getUserInfo config', config);
     validateConfig(config, wechatConfigGuard);
     const { accessToken, openid } = await getAccessToken(code, config);
-
+    console.log('getUserInfo token', accessToken, openid);
     try {
       const httpResponse = await got.get(userInfoEndpoint, {
         searchParams: { access_token: accessToken, openid, lang: 'zh_CN' },
         timeout: { request: defaultTimeout },
       });
+      console.log('getUserInfo httpResponse', httpResponse);
       const rawData = parseJson(httpResponse.body);
+      console.log('getUserInfo rawData', rawData);
       const result = userInfoResponseGuard.safeParse(rawData);
-
+      console.log('getUserInfo result', result);
       if (!result.success) {
         throw new ConnectorError(ConnectorErrorCodes.InvalidResponse, result.error);
       }
@@ -118,6 +122,7 @@ const getUserInfo =
 
       return { id: unionid ?? openid, avatar: headimgurl, name: nickname, rawData };
     } catch (error: unknown) {
+      console.log('getUserInfo error', error);
       return getUserInfoErrorHandler(error);
     }
   };
