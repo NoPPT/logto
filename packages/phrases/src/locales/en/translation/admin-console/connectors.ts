@@ -75,6 +75,7 @@ const connectors = {
     universal: 'Universal',
     web: 'Web',
     native: 'Native',
+    h5: 'H5',
   },
   add_multi_platform: ' supports multiple platform, select a platform to continue',
   drawer_title: 'Connector Guide',

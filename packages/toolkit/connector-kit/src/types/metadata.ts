@@ -11,6 +11,7 @@ export enum ConnectorPlatform {
   Native = 'Native',
   Universal = 'Universal',
   Web = 'Web',
+  H5 = 'H5',
 }
 
 export const i18nPhrasesGuard: ZodType<I18nPhrases> = z
