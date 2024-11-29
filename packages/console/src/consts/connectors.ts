@@ -23,6 +23,7 @@ export const connectorPlatformLabel = Object.freeze({
   [ConnectorPlatform.Native]: 'connectors.platform.native',
   [ConnectorPlatform.Universal]: 'connectors.platform.universal',
   [ConnectorPlatform.Web]: 'connectors.platform.web',
+  [ConnectorPlatform.H5]: 'connectors.platform.h5',
 }) satisfies ConnectorPlatformLabel;
 
 type ConnectorPlaceholderIcon = {

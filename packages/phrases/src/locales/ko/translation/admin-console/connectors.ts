@@ -72,6 +72,7 @@ const connectors = {
     universal: '일반',
     web: '웹',
     native: '네이티브',
+    h5: 'H5',
   },
   add_multi_platform: ' 다양한 플랫폼 지원, 플랫폼을 선택해주세요.',
   drawer_title: '연동 가이드',

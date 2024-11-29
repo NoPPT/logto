@@ -75,6 +75,7 @@ const connectors = {
     universal: 'Uniwersalny',
     web: 'Web',
     native: 'Natywny',
+    h5: 'H5',
   },
   add_multi_platform: 'obsługuje wiele platform, wybierz platformę, aby kontynuować',
   drawer_title: 'Poradnik łącznika',

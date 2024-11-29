@@ -75,6 +75,7 @@ const connectors = {
     universal: 'عالمي',
     web: 'ويب',
     native: 'تطبيق محمول',
+    h5: 'H5',
   },
   add_multi_platform: 'يدعم منصات متعددة ، حدد منصة للمتابعة',
   drawer_title: 'دليل الموصل',

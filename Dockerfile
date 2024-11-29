@@ -7,11 +7,14 @@ ENV CI=true
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 
 ### Install toolchain ###
+RUN npm config set registry https://mirrors.cloud.tencent.com/npm/
 RUN npm add --location=global pnpm@^9.0.0
 # https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#node-gyp-alpine
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache python3 make g++ rsync
 
 COPY . .
+RUN pnpm config set registry https://mirrors.cloud.tencent.com/npm/
 
 ### Install dependencies and build ###
 RUN pnpm i
